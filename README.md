@@ -38,4 +38,4 @@ None
 
 ## Authors
 
-Chris Chalmers - [LinkedIn](https://uk.linkedin.com/in/chris-chalmers)
+Chris Chalmers - [LinkedIn](https://uk.linkedin.com/in/chris-chalmers), [Azure DevOps](https://dev.azure.com/cbchalmers/Personal%20Development), [GitHub](https://github.com/cbchalmers)
