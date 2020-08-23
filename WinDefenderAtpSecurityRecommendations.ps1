@@ -120,6 +120,20 @@ $DisableDomainCredsExists = Test-RegistryValue -Path $DisableDomainCredsKey -Nam
 Update-RegistryValue -Exists $DisableDomainCredsExists -Path $DisableDomainCredsKey -Name $DisableDomainCredsName
 
 <#
+# Title
+## Set 'Account lockout threshold' to 1-10 invalid login attempts
+# Description
+## Determines the number of failed logon attempts before the account is locked. The number of failed logon attempts should be reasonably small to minimize the possibility of a successful password attack, while still allowing for honest errors made during a legitimate user logon. This security control is only assessed for machines with Windows 10, version 1709 or later.
+# Potential Risk
+## Setting an appropriate account lockout threshold helps prevents brute-force password attacks on the system.
+# CCE
+## N/A
+#>
+
+Invoke-Command -ScriptBlock { net accounts /lockoutthreshold:5 }
+Write-Host "Account lockout threadhold has been updated"
+
+<#
 # Stop Logging
 #>
 Stop-Transcript
