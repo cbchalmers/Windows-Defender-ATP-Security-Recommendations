@@ -11,6 +11,7 @@ From [Microsoft Defender Security Center](https://securitycenter.windows.com/mac
 * Enable 'Local Security Authority (LSA) protection'
 * Enable 'Require domain users to elevate when setting a network's location'
 * Disable the local storage of passwords and credentials
+* Account lockout threshold
 
 ### Prerequisites
 
